@@ -1,0 +1,116 @@
+@use './variables';
+
+.collection-container {
+    position: relative;
+    background-image: url('https://gratefulearthcoffee.com/cdn/shop/files/H1.jpg?v=1674511000');
+    height: 74vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    font-family: variables.$montserrat-font;
+
+    @media (max-width: 900px) {
+        height: auto;
+        background-size: cover;
+    }
+
+    @media (max-width: 480px) {
+        height: auto;
+        background-size: cover;
+    }
+
+    @media (max-width: 320px) {
+        height: auto;
+        background-size: contain;
+    }
+}
+
+.collection-hero {
+    position: relative;
+    width: fit-content;
+    left: 14vh;
+    color: variables.$white-font-color;
+
+    @media (max-width: 900px) {
+        left: 5vh;
+        text-align: center;
+    }
+
+    h1 {
+        position: relative;
+        text-transform: uppercase;
+        font-family: variables.$antonio-font;
+        font-weight: variables.$font-weight-700;
+        font-size: 60px;
+        transform: scaleY(1);
+
+        @media (max-width: 900px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 25px;
+        }
+    }
+
+    h5 {
+        width: 44vw;
+        font-family: variables.$antonio-font;
+        font-weight: variables.$font-weight-700;
+        font-size: 22px;
+        transform: scaleY(1);
+        position: relative;
+
+        @media (max-width: 900px) {
+            width: 80vw;
+            font-size: 18px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.collection-breadcrumbs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: variables.$white-font-color;
+    gap: 5px;
+
+    @media (max-width: 900px) {
+        justify-content: center;
+    }
+
+    a {
+        color: variables.$white-font-color;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+    }
+
+    span {
+        margin: 0 5px;
+    }
+}
+
+.collection-desc-images {
+    position: relative;
+    top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+
+    img {
+        margin: 0 8px;
+    }
+}

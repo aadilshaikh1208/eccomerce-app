@@ -1,0 +1,229 @@
+@use './variables';
+
+.home-product-container {
+    margin: 10vh;
+
+    .heading {
+        h2 {
+            text-transform: uppercase;
+            font-size: 54px;
+            line-height: 57px;
+            font-weight: 700;
+            margin-bottom: 7vh !important;
+            text-align: center;
+            font-family: variables.$antonio-font;
+            transform: scaleY(1);
+            letter-spacing: 1px;
+
+            @media (max-width: 768px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .home-product-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .home-product-image,
+    .home-product-details {
+        flex: 1;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 48%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    .home-product-image {
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+
+            @media (max-width: 480px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .home-product-details {
+        display: block;
+        font-family: variables.$antonio-font;
+
+        .home-product-title {
+            font-size: 2.3em;
+            font-weight: bold;
+
+            @media (max-width: 768px) {
+                font-size: 2em;
+            }
+
+            @media (max-width: 480px) {
+                font-size: 1.8em;
+            }
+        }
+
+        .product-rating {
+            margin-top: 4vh;
+
+            span {
+                font-family: variables.$montserrat-font;
+            }
+        }
+
+        .home-product-price {
+            margin-top: 2vh;
+
+            span {
+                font-size: 2.5em;
+                font-weight: variables.$font-weight-700;
+
+                @media (max-width: 768px) {
+                    font-size: 2em;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 1.8em;
+                }
+            }
+
+            strike {
+                margin-left: 1vw;
+                font-size: 1.8em;
+
+                @media (max-width: 768px) {
+                    font-size: 1.5em;
+                }
+
+                @media (max-width: 480px) {
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .home-product-benefits {
+            margin-top: 3vh;
+            font-family: variables.$montserrat-font;
+
+            .home-product-benefits-title {
+                font-size: 1.16em;
+                font-weight: variables.$font-weight-600;
+            }
+
+            .home-product-benefits-points {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 2vh;
+
+                @media (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
+
+                p {
+                    margin: 1vh 0;
+                    font-size: 18px;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .home-product-meta-label {
+            margin-top: 5vh;
+            font-size: 18px;
+            font-family: variables.$montserrat-font;
+            font-weight: variables.$font-weight-600;
+            width: 37vw;
+
+            @media (max-width: 768px) {
+                width: 80vw;
+                font-size: 16px;
+            }
+
+            @media (max-width: 480px) {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+
+        .home-product-btn {
+            margin-top: 2vh;
+
+            .home-product-button {
+                font-family: variables.$montserrat-font;
+                font-weight: variables.$font-weight-500;
+                background-color: variables.$purple-color;
+                display: inline-block;
+                border: none;
+                cursor: pointer;
+                position: variables.$relative-position;
+                font-size: 18px;
+                color: variables.$white-font-color;
+                overflow: hidden;
+                z-index: 1;
+                width: 15.3vw;
+                padding: 1.2vw 2.5vw;
+
+                @media (max-width: 1200px) {
+                    width: 20vw;
+                    padding: 2vh 3vw;
+                    font-size: 16px;
+                }
+
+                @media (max-width: 768px) {
+                    width: 40vw;
+                    padding: 2vh 3vw;
+                    font-size: 16px;
+                }
+
+                @media (max-width: 480px) {
+                    width: 40vw;
+                    padding: 1vh 5vw;
+                    font-size: 0.45em;
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: #c62dd2;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    z-index: -1;
+                    transition: all linear 0.3s;
+                }
+
+                &:hover::before {
+                    top: 0;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

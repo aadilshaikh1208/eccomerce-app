@@ -1,0 +1,58 @@
+@use './variables';
+
+.orderConfirm-container {
+    font-family: variables.$montserrat-font;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(35, 35, 35, 0.05);
+}
+
+.orderConfirm-image {
+    svg {
+        width: 80px;
+        height: 80px;
+
+        @media (min-width: 768px) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.orderConfirm-message {
+    margin-top: 20px;
+
+    h2 {
+        color: #873a8d;
+        font-size: 20px;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+}
+
+.continueShopping-button {
+    font-family: variables.$montserrat-font;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #873a8d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #722a77
+    }
+
+    @media (max-width: 576px) {
+        padding: 8px 16px;
+    }
+}
