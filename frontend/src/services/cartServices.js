@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const VITE_BACKEND_BASEURL = 'http://54.221.82.201/api'
+const VITE_BACKEND_BASEURL = 'http://54.221.82.201:4000/api'
 
 export const updateCartOnServer = async (userId, cartItems) => {
     try {
