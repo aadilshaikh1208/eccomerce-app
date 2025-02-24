@@ -12,7 +12,7 @@ const HomeProduct = () => {
     const id = "67a5e7d6cc97f9ac16ee35df"
     const quantity = 1
     const navigate = useNavigate()
-    const VITE_BACKEND_BASEURL = 'http://44.211.141.206:4000/api'
+    const VITE_BACKEND_BASEURL = 'http://54.221.82.201/api'
 
 
     useEffect(() => {
