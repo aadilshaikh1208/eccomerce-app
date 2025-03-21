@@ -18,7 +18,7 @@ const CheckoutPage = () => {
     const [cardErrors, setCardErrors] = useState({});
     const navigate = useNavigate()
     const userID = localStorage.getItem("userID") || "guest"
-    const VITE_BACKEND_BASEURL = 'http://54.221.82.201:4000/api'
+    const VITE_BACKEND_BASEURL = 'http://3.91.47.62:4000/api'
 
 
     const validationSchema = Yup.object({

@@ -15,7 +15,7 @@ const Login = () => {
     const [logoutLoading, setLogoutLoading] = useState(false);
     const [heading, setHeading] = useState("")
     const navigate = useNavigate();
-    const VITE_BACKEND_BASEURL = 'http://54.221.82.201:4000/api'
+    const VITE_BACKEND_BASEURL = 'http://3.91.47.62:4000/api'
 
     useEffect(() => {
         const verifyAuth = async () => {
