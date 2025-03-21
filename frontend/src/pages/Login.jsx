@@ -62,7 +62,6 @@ const Login = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                withCredentials: true,
             });
             if (response.status === 200 && response.data.token) {
                 const userId = response.data.user._id;

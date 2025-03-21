@@ -8,7 +8,6 @@ export const updateCartOnServer = async (userId, cartItems) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            withCredentials: true,
         });
         return response.data;
     } catch (error) {
@@ -35,7 +34,6 @@ export const mergeCarts = async (userId, guestCart) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            withCredentials: true,
         });
         return response.data;
     } catch (error) {

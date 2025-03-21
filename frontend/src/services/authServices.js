@@ -4,7 +4,6 @@ const VITE_BACKEND_BASEURL = 'http://3.91.47.62:4000/api'
 export const checkAuth = async (token) => {
     try {
         const response = await axios.get(`${VITE_BACKEND_BASEURL}/auth/check-auth`, {
-            withCredentials: true,
             headers: {
                 'Content-Type': 'application/json',
                 "Authorization": `Bearer ${token}`
@@ -21,7 +20,6 @@ export const checkAuth = async (token) => {
 export const fetchAdminDetails = async (userId) => {
     try {
         const response = await axios.get(`${VITE_BACKEND_BASEURL}/admin/profile/${userId}`, {
-            withCredentials: true,
             headers: {
                 'Content-Type': 'application/json',
                 "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -40,7 +38,6 @@ export const fetchAdminDetails = async (userId) => {
 export const logout = async () => {
     try {
         const response = await axios.post(`${VITE_BACKEND_BASEURL}/auth/logout`, {}, {
-            withCredentials: true,
         })
         return response
     }
@@ -59,7 +56,6 @@ export const userSignUp = async (credentials) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            withCredentials: true,
         });
 
 
