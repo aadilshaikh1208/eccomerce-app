@@ -1,5 +1,5 @@
 import axios from "axios";
-const VITE_BACKEND_BASEURL = 'http://3.91.47.62:4000/api'
+const VITE_BACKEND_BASEURL = 'http://3.92.239.167:4000/api'
 
 export const saveOrders = async (userId, ordersData, totalPrice) => {
     try {
