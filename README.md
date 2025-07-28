@@ -53,9 +53,7 @@ CVV: 123
 
 This project was developed with the active use of the following **AI coding assistants**:
 - [ChatGPT](https://chat.openai.com)
-- [GitHub Copilot](https://github.com/features/copilot)
 - [Claude](https://claude.ai)
-- [Gemini (Google Bard)](https://bard.google.com)
 
 These tools accelerated development, improved debugging, and supported cleaner architecture and code design.
 
